@@ -8,12 +8,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container">
-      <p>Select color:</p>
+    <section id="container">
+      <label>Select color:</label>
       <input id="color_wheel" type="color" />
-      <div id="colorbox"></div>
-      <label>Hex:</label><input type="text" name="hex" id="hex" /> <label>rgb:</label><input type="text" name="rgb" id="rgb" /> <label>hsl:</label><input type="text" name="hsl" id="hsl" />
-    </div>
+
+      <div id="filters_container">
+        <input type="checkbox" name="analogue" /><label>Analogues</label> <input type="checkbox" name="monochromatic" /><label>Monochromatic</label> <input type="checkbox" name="triad" /><label>Triad</label>
+        <input type="checkbox" name="complementary" /><label>Complementary</label> <input type="checkbox" name="compound" /><label>Compound</label> <input type="checkbox" name="shades" /><label>Shades</label>
+      </div>
+      <div id="boxes_container">
+        <div class="box_container">
+          <div id="colorbox1" class="colorbox"></div>
+          <label>Hex:</label><input type="text" name="hex" id="hex1" /> <label>rgb:</label><input type="text" name="rgb" id="rgb1" /> <label>hsl:</label><input type="text" name="hsl" id="hsl1" />
+        </div>
+
+        <div class="box_container">
+          <div id="colorbox2" class="colorbox"></div>
+          <label>Hex:</label><input type="text" name="hex" id="hex2" /> <label>rgb:</label><input type="text" name="rgb" id="rgb2" /> <label>hsl:</label><input type="text" name="hsl" id="hsl2" />
+        </div>
+
+        <div class="box_container">
+          <div id="colorbox" class="colorbox"></div>
+          <label>Hex:</label><input type="text" name="hex" id="hex" /> <label>rgb:</label><input type="text" name="rgb" id="rgb" /> <label>hsl:</label><input type="text" name="hsl" id="hsl" />
+        </div>
+
+        <div class="box_container">
+          <div id="colorbox3" class="colorbox"></div>
+          <label>Hex:</label><input type="text" name="hex" id="hex3" /> <label>rgb:</label><input type="text" name="rgb" id="rgb3" /> <label>hsl:</label><input type="text" name="hsl" id="hsl3" />
+        </div>
+
+        <div class="box_container">
+          <div id="colorbox4" class="colorbox"></div>
+          <label>Hex:</label><input type="text" name="hex" id="hex4" /> <label>rgb:</label><input type="text" name="rgb" id="rgb4" /> <label>hsl:</label><input type="text" name="hsl" id="hsl4" />
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
